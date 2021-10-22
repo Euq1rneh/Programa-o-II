@@ -1,0 +1,30 @@
+def f1(n, v):
+    b = n * n		2op
+    s = 0		1op
+    while b > 1:	1op	3 + n*7 + 1 = 7n+4 ---> O(n) complexidade linear
+        s += v[n]	2op
+        s += b		2op
+        b -= 2		2op
+    return s		1op
+
+
+
+
+def f2(d,l):
+    r = []			1op
+    for x in l:			1op; for = numero de elementos da lista (n)
+        if x not in d:		1op; percorre a lista toda n elementos
+            r.append(x)		1op
+    return r			1op
+
+
+1 + n*2n + 1 = 2n^2 + 2 ----> O(n^c) complexidade polinomial
+
+
+
+def teste(lista, x):
+    lista_flat=[]			1op
+    for sublista in lista:		1op; n elementos na lista
+        for num in sublista:		1op; n elementos na sublista
+            lista_flat.append(num)	1op;
+    return x in lista_flat		1op;
